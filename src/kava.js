@@ -1,6 +1,6 @@
 // @flow
-import {BasePlugin, Error as PKError, FakeEvent, Utils} from '@playkit-js/playkit-js';
-import {OVPAnalyticsService} from 'playkit-js-providers/dist/playkit-analytics-service';
+import {BasePlugin, Error as PKError, FakeEvent, Utils} from '@pakhshkit-js/pakhshkit-js';
+import {OVPAnalyticsService} from 'pakhshkit-js-providers/dist/pakhshkit-analytics-service';
 import {KavaEventModel, KavaEventType} from './kava-event-model';
 import {KavaRateHandler} from './kava-rate-handler';
 import {KavaTimer} from './kava-timer';
@@ -9,7 +9,7 @@ import {KavaModel} from './kava-model';
 const DIVIDER: number = 1024;
 
 /**
- * Kaltura Advanced Analytics plugin.
+ * Vidiun Advanced Analytics plugin.
  * @class Kava
  * @param {string} name - The plugin name.
  * @param {Player} player - The player instance.
@@ -38,7 +38,7 @@ class Kava extends BasePlugin {
    * @memberof Kava
    */
   static defaultConfig: Object = {
-    serviceUrl: '//analytics.kaltura.com/api_v3/index.php',
+    serviceUrl: '//analytics.vidiun.com/api_v3/index.php',
     viewEventCountdown: 10,
     resetSessionCountdown: 30,
     dvrThreshold: 120,
@@ -447,7 +447,7 @@ class Kava extends BasePlugin {
     this._model.getSessionId = () => this.config.sessionId;
     this._model.getClientVer = () => this.config.playerVersion;
     this._model.getClientTag = () => 'html5:v' + this.config.playerVersion;
-    this._model.getKS = () => this.config.ks;
+    this._model.getVS = () => this.config.vs;
     this._model.getUIConfId = () => this.config.uiConfId;
     this._model.getReferrer = () => this.config.referrer;
     this._model.getCustomVar1 = () => this.config.customVar1;

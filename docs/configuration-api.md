@@ -48,7 +48,7 @@ Type: [Object][40]
 
 ### Properties
 
-- `serviceUrl` **[string][41]?** The Kaltura API server.
+- `serviceUrl` **[string][41]?** The Vidiun API server.
 - `viewEventCountdown` **[number][42]?** The interval in seconds that VIEW event will be sent.
 - `resetSessionCountdown` **[number][42]?** The interval in seconds that Kava session will be reset.
 - `dvrThreshold` **[number][42]?** Threshold in seconds from the live edge.
@@ -64,7 +64,7 @@ Type: [Object][40]
 ```javascript
 // Default config
 {
- serviceUrl: '//analytics.kaltura.com/api_v3/index.php',
+ serviceUrl: '//analytics.vidiun.com/api_v3/index.php',
  viewEventCountdown: 30,
  resetSessionCountdown: 30,
  dvrThreshold: 120,
@@ -174,7 +174,7 @@ Type: [string][41]
 
 ## Kava
 
-Kaltura Advanced Analytics plugin.
+Vidiun Advanced Analytics plugin.
 
 ### Parameters
 

@@ -27,7 +27,7 @@ class KavaModel {
   getSessionId: Function;
   getClientVer: Function;
   getClientTag: Function;
-  getKS: Function;
+  getVS: Function;
   getUIConfId: Function;
   getReferrer: Function;
   getCustomVar1: Function;

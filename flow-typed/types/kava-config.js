@@ -2,7 +2,7 @@
 
 /**
  * @typedef {Object} KavaConfigObject
- * @property {string} [serviceUrl] - The Kaltura API server.
+ * @property {string} [serviceUrl] - The Vidiun API server.
  * @property {number} [viewEventCountdown] - The interval in seconds that VIEW event will be sent.
  * @property {number} [resetSessionCountdown] - The interval in seconds that Kava session will be reset.
  * @property {number} [dvrThreshold] - Threshold in seconds from the live edge.
@@ -15,7 +15,7 @@
  * @example
  * // Default config
  * {
- *  serviceUrl: '//analytics.kaltura.com/api_v3/index.php',
+ *  serviceUrl: '//analytics.vidiun.com/api_v3/index.php',
  *  viewEventCountdown: 30,
  *  resetSessionCountdown: 30,
  *  dvrThreshold: 120,
