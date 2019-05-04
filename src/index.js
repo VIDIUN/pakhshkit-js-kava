@@ -1,5 +1,5 @@
 // @flow
-import {registerPlugin} from '@playkit-js/playkit-js';
+import {registerPlugin} from '@pakhshkit-js/pakhshkit-js';
 import {Kava} from './kava';
 
 declare var __VERSION__: string;

@@ -16,21 +16,21 @@ Kava parameters are additional data that is sent with Kava event and represent r
 
 ---
 
-<a id="partnerId"></a>`partnerId` - The partner account ID on Kaltura's platform.
+<a id="partnerId"></a>`partnerId` - The partner account ID on Vidiun's platform.
 
 - Obtained from the plugin config (injected automatically by the player, no need to configure it explicitly).
 - **Mandatory field**. If not exist, sending of all events should be blocked and related warning should be printed to log.
 
 ---
 
-<a id="entryId"></a>`entryId` - The delivered content ID on Kaltura's platform.
+<a id="entryId"></a>`entryId` - The delivered content ID on Vidiun's platform.
 
 - Obtained from the plugin config (injected automatically by the player, no need to configure it explicitly).
 - **Mandatory field**. If not exist, sending of all events should be blocked and related warning should be printed to log.
 
 ---
 
-<a id="ks"></a>`ks` - The Kaltura encoded session data.
+<a id="vs"></a>`vs` - The Vidiun encoded session data.
 
 - Obtained from the plugin config (injected automatically by the player, no need to configure it explicitly).
 - If not exist do not send this parameter at all.
@@ -212,7 +212,7 @@ The common parameters defined the following:
 - [`entryId`](#entryId)
 - [`sessionId`](#sessionId)
 - [`eventIndex`](#eventIndex)
-- [`ks`](#ks)
+- [`vs`](#vs)
 - [`referrer`](#referrer)
 - [`deliveryType`](#deliveryType)
 - [`playbackType`](#playbackType)

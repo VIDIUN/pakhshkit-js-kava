@@ -1,7 +1,7 @@
 {
-  "name": "@playkit-js/playkit-js-kava",
+  "name": "@pakhshkit-js/pakhshkit-js-kava",
   "version": "0.7.2",
-  "main": "dist/playkit-kava.js",
+  "main": "dist/pakhshkit-kava.js",
   "scripts": {
     "clean": "rm -rf ./dist",
     "prebuild": "npm run clean",
@@ -32,7 +32,7 @@
     "access": "public"
   },
   "devDependencies": {
-    "@playkit-js/playkit-js": "^0.37.0",
+    "@pakhshkit-js/pakhshkit-js": "^0.37.0",
     "babel-cli": "^6.18.0",
     "babel-core": "^6.18.2",
     "babel-eslint": "^7.1.1",
@@ -72,7 +72,7 @@
     "lint-staged": "^7.2.0",
     "mocha": "^3.2.0",
     "mocha-cli": "^1.0.1",
-    "playkit-js-providers": "https://github.com/kaltura/playkit-js-providers.git#master",
+    "pakhshkit-js-providers": "https://github.com/vidiun/pakhshkit-js-providers.git#master",
     "pre-push": "^0.1.1",
     "prettier": "^1.13.5",
     "sinon": "^2.0.0",
@@ -84,29 +84,29 @@
     "webpack-dev-server": "latest"
   },
   "peerDependencies": {
-    "@playkit-js/playkit-js": "^0.37.0",
-    "playkit-js-providers": "https://github.com/kaltura/playkit-js-providers.git#master"
+    "@pakhshkit-js/pakhshkit-js": "^0.37.0",
+    "pakhshkit-js-providers": "https://github.com/vidiun/pakhshkit-js-providers.git#master"
   },
   "keywords": [
-    "kaltura",
+    "vidiun",
     "analytics",
     "QOE",
     "QOS",
     "player",
-    "playkit-js",
-    "playkit-js-kava",
+    "pakhshkit-js",
+    "pakhshkit-js-kava",
     "html5 player"
   ],
   "license": "AGPL-3.0",
   "repository": {
     "type": "git",
-    "url": "git+https://github.com/kaltura/playkit-js-kava.git"
+    "url": "git+https://github.com/vidiun/pakhshkit-js-kava.git"
   },
   "bugs": {
-    "url": "https://github.com/kaltura/playkit-js-kava/issues"
+    "url": "https://github.com/vidiun/pakhshkit-js-kava/issues"
   },
-  "homepage": "https://github.com/kaltura/playkit-js-kava#readme",
-  "kcc": {
-    "name": "playkit-kava"
+  "homepage": "https://github.com/vidiun/pakhshkit-js-kava#readme",
+  "vcc": {
+    "name": "pakhshkit-kava"
   }
 }
