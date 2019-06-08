@@ -1,7 +1,7 @@
 import '../../src/index.js';
-import {loadPlayer} from 'playkit-js';
-import * as TestUtils from 'playkit-js/test/src/utils/test-utils';
-import {OVPAnalyticsService, RequestBuilder} from 'playkit-js-providers/dist/playkit-analytics-service';
+import {loadPlayer} from 'pakhshkit-js';
+import * as TestUtils from 'pakhshkit-js/test/src/utils/test-utils';
+import {OVPAnalyticsService, RequestBuilder} from 'pakhshkit-js-providers/dist/pakhshkit-analytics-service';
 import {KavaEventModel} from '../../src/kava-event-model';
 
 const targetId = 'player-placeholder_kava.spec';
@@ -97,22 +97,22 @@ describe('KavaPlugin', function() {
       plugins: {
         kava: {
           referrer: 'referrer',
-          serviceUrl: '//analytics.kaltura.com/api_v3/index.php',
+          serviceUrl: '//analytics.vidiun.com/api_v3/index.php',
           viewEventCountdown: 10,
           resetSessionCountdown: 30,
           playerVersion: '0.18.1',
-          playerName: 'kaltura-player-js',
+          playerName: 'vidiun-player-js',
           partnerId: '1091',
           entryId: '0_wifqaipd',
           entryType: 'Vod',
           sessionId: 'c15be273-0f1b-10a3-4fc9-d7a53eebee85:b66abd37-e2e2-a22e-86ac-7859592e754b',
-          ks: 'Njk0ZmI4MzBiOTJiMGZhN2NmNTAwYWQyZGM2M2Y0YjkxMGRiZGI3MXwxMDkxOzEwOTE7MTUxNzkyMjgxMzswOzE1MTc4MzY0MTMuMTM4OzA7dmlldzoqLHdpZGdldDoxOzs='
+          vs: 'Njk0ZmI4MzBiOTJiMGZhN2NmNTAwYWQyZGM2M2Y0YjkxMGRiZGI3MXwxMDkxOzEwOTE7MTUxNzkyMjgxMzswOzE1MTc4MzY0MTMuMTM4OzA7dmlldzoqLHdpZGdldDoxOzs='
         }
       },
       session: {
         id: 'c15be273-0f1b-10a3-4fc9-d7a53eebee85:b66abd37-e2e2-a22e-86ac-7859592e754b',
         partnerId: 1091,
-        ks: 'Njk0ZmI4MzBiOTJiMGZhN2NmNTAwYWQyZGM2M2Y0YjkxMGRiZGI3MXwxMDkxOzEwOTE7MTUxNzkyMjgxMzswOzE1MTc4MzY0MTMuMTM4OzA7dmlldzoqLHdpZGdldDoxOzs='
+        vs: 'Njk0ZmI4MzBiOTJiMGZhN2NmNTAwYWQyZGM2M2Y0YjkxMGRiZGI3MXwxMDkxOzEwOTE7MTUxNzkyMjgxMzswOzE1MTc4MzY0MTMuMTM4OzA7dmlldzoqLHdpZGdldDoxOzs='
       },
       id: '0_wifqaipd',
       name: 'MPEG Dash with MultiAudio New Transcoding',
@@ -138,7 +138,7 @@ describe('KavaPlugin', function() {
       params.entryId.should.equal(config.id);
       params.sessionId.should.equal(config.session.id);
       params.eventIndex.should.equal(1);
-      params.ks.should.equal(config.session.ks);
+      params.vs.should.equal(config.session.vs);
       params.referrer.should.equal(btoa(config.plugins.kava.referrer));
       params.deliveryType.should.equal('url');
       params.playbackType.should.equal('vod');
@@ -427,22 +427,22 @@ describe('KavaPlugin', function() {
       },
       plugins: {
         kava: {
-          serviceUrl: '//analytics.kaltura.com/api_v3/index.php',
+          serviceUrl: '//analytics.vidiun.com/api_v3/index.php',
           viewEventCountdown: 10,
           resetSessionCountdown: 30,
           playerVersion: '0.18.1',
-          playerName: 'kaltura-player-js',
+          playerName: 'vidiun-player-js',
           partnerId: '1091',
           entryId: '0_wifqaipd',
           entryType: 'Vod',
           sessionId: 'c15be273-0f1b-10a3-4fc9-d7a53eebee85:b66abd37-e2e2-a22e-86ac-7859592e754b',
-          ks: 'Njk0ZmI4MzBiOTJiMGZhN2NmNTAwYWQyZGM2M2Y0YjkxMGRiZGI3MXwxMDkxOzEwOTE7MTUxNzkyMjgxMzswOzE1MTc4MzY0MTMuMTM4OzA7dmlldzoqLHdpZGdldDoxOzs='
+          vs: 'Njk0ZmI4MzBiOTJiMGZhN2NmNTAwYWQyZGM2M2Y0YjkxMGRiZGI3MXwxMDkxOzEwOTE7MTUxNzkyMjgxMzswOzE1MTc4MzY0MTMuMTM4OzA7dmlldzoqLHdpZGdldDoxOzs='
         }
       },
       session: {
         id: 'c15be273-0f1b-10a3-4fc9-d7a53eebee85:b66abd37-e2e2-a22e-86ac-7859592e754b',
         partnerId: 1091,
-        ks: 'Njk0ZmI4MzBiOTJiMGZhN2NmNTAwYWQyZGM2M2Y0YjkxMGRiZGI3MXwxMDkxOzEwOTE7MTUxNzkyMjgxMzswOzE1MTc4MzY0MTMuMTM4OzA7dmlldzoqLHdpZGdldDoxOzs='
+        vs: 'Njk0ZmI4MzBiOTJiMGZhN2NmNTAwYWQyZGM2M2Y0YjkxMGRiZGI3MXwxMDkxOzEwOTE7MTUxNzkyMjgxMzswOzE1MTc4MzY0MTMuMTM4OzA7dmlldzoqLHdpZGdldDoxOzs='
       },
       id: '0_wifqaipd',
       name: 'MPEG Dash with MultiAudio New Transcoding',

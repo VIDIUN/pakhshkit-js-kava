@@ -139,8 +139,8 @@ export function getEventModel(eventObj: KavaEvent, model: KavaModel): Object {
   if (model.getSessionStartTime()) {
     commonModel.sessionStartTime = model.getSessionStartTime();
   }
-  if (model.getKS()) {
-    commonModel.ks = model.getKS();
+  if (model.getVS()) {
+    commonModel.vs = model.getVS();
   }
   if (model.getUIConfId()) {
     commonModel.uiConfId = model.getUIConfId();

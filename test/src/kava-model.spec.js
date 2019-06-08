@@ -8,7 +8,7 @@ const ab = 3,
   referrer = 'http://referrer',
   cv = 'version',
   ct = 'html5:version',
-  ks = 'ks',
+  vs = 'vs',
   uic = 1234,
   cv1 = null,
   cv2 = {cv2: 'cv2'},
@@ -66,7 +66,7 @@ describe('KavaModel', () => {
     model.getReferrer = () => referrer;
     model.getClientVer = () => cv;
     model.getClientTag = () => ct;
-    model.getKS = () => ks;
+    model.getVS = () => vs;
     model.getUIConfId = () => uic;
     model.getCustomVar1 = () => cv1;
     model.getCustomVar2 = () => cv2;
@@ -103,7 +103,7 @@ describe('KavaModel', () => {
       clientVer: cv,
       clientTag: ct,
       position: pos,
-      ks: ks,
+      vs: vs,
       uiConfId: uic,
       sessionStartTime: sst,
       customVar2: cv2,

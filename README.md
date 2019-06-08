@@ -1,13 +1,13 @@
-# PlayKit JS Kava - Kaltura Advanced Video Analytics Plugin for the [Kaltura Player JS]
+# PakhshKit JS Kava - Vidiun Advanced Video Analytics Plugin for the [Vidiun Player JS]
 
-[![Build Status](https://travis-ci.org/kaltura/playkit-js-kava.svg?branch=master)](https://travis-ci.org/kaltura/playkit-js-kava)
+[![Build Status](https://travis-ci.org/vidiun/pakhshkit-js-kava.svg?branch=master)](https://travis-ci.org/vidiun/pakhshkit-js-kava)
 [![code style: prettier](https://img.shields.io/badge/code_style-prettier-ff69b4.svg?style=flat-square)](https://github.com/prettier/prettier)
 
-PlayKit JS Kava plugin integrates Kava (Kaltura Advanced Video Analytics) with the [Kaltura Player JS].
+PakhshKit JS Kava plugin integrates Kava (Vidiun Advanced Video Analytics) with the [Vidiun Player JS].
 
 The main purpose of this plugin is to track and collect various events and data about the video player.
 
-PlayKit JS Kava is written in [ECMAScript6], statically analysed using [Flow] and transpiled in ECMAScript5 using [Babel].
+PakhshKit JS Kava is written in [ECMAScript6], statically analysed using [Flow] and transpiled in ECMAScript5 using [Babel].
 
 [flow]: https://flow.org/
 [ecmascript6]: https://github.com/ericdouglas/ES6-Learning#articles--tutorials
@@ -17,9 +17,9 @@ PlayKit JS Kava is written in [ECMAScript6], statically analysed using [Flow] an
 
 ### Prerequisites
 
-The plugin requires [PlayKit JS Player] to be loaded first.
+The plugin requires [PakhshKit JS Player] to be loaded first.
 
-[kaltura player js]: https://github.com/kaltura/kaltura-player-js
+[vidiun player js]: https://github.com/vidiun/vidiun-player-js
 
 ### Installing
 
@@ -28,8 +28,8 @@ First, clone and run [yarn] to install dependencies:
 [yarn]: https://yarnpkg.com/lang/en/
 
 ```
-git clone https://github.com/kaltura/playkit-js-kava.git
-cd playkit-js-kava
+git clone https://github.com/vidiun/pakhshkit-js-kava.git
+cd pakhshkit-js-kava
 yarn install
 ```
 
@@ -46,8 +46,8 @@ yarn run build
 Finally, add the bundle as a script tag in your page, and initialize the player
 
 ```html
-<script type="text/javascript" src="/PATH/TO/FILE/kaltura-{ovp/tv}-player.js"></script>
-<script type="text/javascript" src="/PATH/TO/FILE/playkit-kava.js"></script>
+<script type="text/javascript" src="/PATH/TO/FILE/vidiun-{ovp/tv}-player.js"></script>
+<script type="text/javascript" src="/PATH/TO/FILE/pakhshkit-kava.js"></script>
 <div id="player-placeholder" style="height:360px; width:640px">
 <script type="text/javascript">
 var config = {
@@ -67,7 +67,7 @@ var config = {
   }
  ...
 };
-var player = KalturaPlayer.setup(config);
+var player = VidiunPlayer.setup(config);
 player.loadMedia({
   entryId: '{ENTRY_ID}'
   ...
@@ -119,7 +119,7 @@ Please read [CONTRIBUTING.md](https://gist.github.com/PurpleBooth/b24679402957c6
 
 ## Versioning
 
-We use [SemVer](http://semver.org/) for versioning. For the versions available, see the [tags on this repository](https://github.com/kaltura/playkit-js-kanalytics/tags).
+We use [SemVer](http://semver.org/) for versioning. For the versions available, see the [tags on this repository](https://github.com/vidiun/pakhshkit-js-vanalytics/tags).
 
 ## License
 

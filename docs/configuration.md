@@ -20,7 +20,7 @@
 
 ```js
 {
-  serviceUrl: '//analytics.kaltura.com/api_v3/index.php',
+  serviceUrl: '//analytics.vidiun.com/api_v3/index.php',
   viewEventCountdown: 10,
   resetSessionCountdown: 30,
   dvrThreshold: 120
@@ -33,9 +33,9 @@
 >
 > ##### Type: `string`
 >
-> ##### Default: `'//analytics.kaltura.com/api_v3/index.php'`
+> ##### Default: `'//analytics.vidiun.com/api_v3/index.php'`
 >
-> ##### Description: The Kaltura API server.
+> ##### Description: The Vidiun API server.
 
 ##
 

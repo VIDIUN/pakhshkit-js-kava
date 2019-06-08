@@ -1,5 +1,5 @@
 // @flow
-import {FakeEvent, FakeEventTarget} from 'playkit-js';
+import {FakeEvent, FakeEventTarget} from 'pakhshkit-js';
 
 const SECOND: number = 1000;
 
